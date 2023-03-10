@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Futura Light";
+    src: url("public/fonts/FuturaLight.otf");
+}
+
+body {
+    margin: 0;
+}
+
+                        /*----------NAVBAR----------*/
+
+.navbar {
+    background-color: #3E0A1C;
+    color: white;
+    font-family: 'Caudex', serif;
+    font-size: 40px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10.313rem;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+                        /*----------HOMEPAGE----------*/
+
+                        /*-----Welcome Section-----*/
+
+#welcome {
+    background-color: #E8C9AC;
+    padding-top: 250px;
+    height: 520px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.welcome_nails_img {
+    width: 810px;
+    height: 350px;
+    background-color: black;
+    position: relative;
+    left: 50px;
+}
+
+.welcome_txt {
+    background-color: white;
+    width: 810px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    position: relative;
+    left: 590px;
+    top: -280px;
+
+}
+
+                        /*-----About Section-----*/
+#about {
+    background-color: #BE9A88;
+    margin-top: 0;
+    padding: 60px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.about_title {
+    margin: 0 20%;
+    font-size: 28px;
+}
+
+.about_txt {
+    margin: 0 20%;
+    text-align: justify;
+}
