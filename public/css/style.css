@@ -76,6 +76,44 @@ body {
     text-align: justify;
 }
 
+                        /*----------PRESTATIONS----------*/
+
+.prestations {
+    background-color: #3E0A1C;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+h5 {
+    font-family: 'Caudex', serif;
+    font-size: 1.25rem;
+    margin-left: 5%;
+}
+
+.pose_card {
+    background-color: #F0E4D1;
+    width: 27rem;
+    height: 46.5rem;
+    margin: 2.5% 2.5%;
+}
+
+.pose_card p {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 5%;
+    text-align: justify;
+}
+
+.line {
+    border-top: 1px solid black;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
                         /*----------FOOTER----------*/
 
 .footer {
