@@ -12,6 +12,7 @@ body {
 .navbar {
     background-color: #3E0A1C;
     color: white;
+    box-shadow: rgba(44, 44, 51, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-family: 'Caudex', serif;
     font-size: 40px;
     position: fixed;
@@ -40,7 +41,9 @@ body {
 .welcome_nails_img {
     width: 810px;
     height: 350px;
-    background-color: black;
+    background-image: url("/images/téléchargement_2.png");
+    background-size: cover;
+    background-position-y: -60px;
     position: relative;
     left: 50px;
 }
@@ -55,7 +58,6 @@ body {
     position: relative;
     left: 590px;
     top: -280px;
-
 }
 
                         /*-----About Section-----*/
@@ -78,6 +80,36 @@ body {
 
                         /*----------PRESTATIONS----------*/
 
+#prestation_welcome {
+    background-color: #E8C9AC;
+    padding-top: 250px;
+    height: 520px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.prestation_img {
+    width: 810px;
+    height: 350px;
+    background-image: url("/images/téléchargement_3.png");
+    background-size: cover;
+    background-position-y: -60px;
+    position: relative;
+    left: 50px;
+}
+
+.prestation_txt {
+    background-color: white;
+    width: 810px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    position: relative;
+    left: 590px;
+    top: -280px;
+}
+
 .prestations {
     background-color: #3E0A1C;
     padding: 60px 0;
@@ -96,7 +128,7 @@ h5 {
 .pose_card {
     background-color: #F0E4D1;
     width: 27rem;
-    height: 46.5rem;
+    height: 44rem;
     margin: 2.5% 2.5%;
 }
 
@@ -114,12 +146,51 @@ h5 {
     margin: 0 auto;
 }
 
+.americaine-img {
+    width: 24rem;
+    height: 24rem;
+    background-image: url("/images/americaine.jpg");
+    background-size: cover;
+    background-position-y: -70px;
+    margin: 10% auto;
+}
+
+.chablon-img {
+    width: 24rem;
+    height: 24rem;
+    background-image: url("/images/chablon2.jpeg");
+    background-size: cover;
+    background-position-x: -90px;
+    margin: 10% auto;
+}
+
+.renfo-img {
+    width: 24rem;
+    height: 24rem;
+    background-image: url("/images/renfo.jpeg");
+    background-size: cover;
+    background-position-x: -90px;
+    margin: 10% auto;
+}
+
+.semi-img {
+    width: 24rem;
+    height: 24rem;
+    background-image: url("/images/semi.jpeg");
+    background-position-x: -80px;
+    background-size: cover;
+    margin: 10% auto;
+}
+
                         /*----------FOOTER----------*/
 
 .footer {
     background-color: #E8C9AC;
     margin: 0;
-    padding: 80px 0;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contact {
@@ -127,10 +198,20 @@ h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 80%;
     height: 150px;
     margin: 0 auto;
+}
 
+.bck_img_footer {
+    background-image: url("/images/background_footer.png");
+    background-size: cover;
+    width: 80%;
+    margin: 0 auto;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact_title {
