@@ -183,6 +183,26 @@ h5 {
 .pose-card-back {
     background-color: #F0E4D1;
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tarifs {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.pose-card-back p {
+    text-align: center;
+}
+
+.prix {
+    padding: 10px;
+}
+
+.pose-explications {
+    padding-top: 10px;
 }
 
 .line {
@@ -191,6 +211,10 @@ h5 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.pose-card-back .line {
+    width: 50%;
 }
 
 .americaine-img {
