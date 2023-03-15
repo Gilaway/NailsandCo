@@ -14,7 +14,7 @@ body {
     color: white;
     box-shadow: rgba(44, 44, 51, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-family: 'Caudex', serif;
-    font-size: 40px;
+    font-size: 2.8vw;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -24,6 +24,9 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+
+    opacity: 0;
+    animation: navBarFadeIn 1s ease-in-out forwards;
 }
 
                         /*----------HOMEPAGE----------*/
@@ -39,8 +42,8 @@ body {
 }
 
 .welcome_nails_img {
-    width: 810px;
-    height: 350px;
+    width: 50.625rem;
+    height: 21.875rem;
     background-image: url("/images/téléchargement_2.png");
     background-size: cover;
     background-position-y: -60px;
@@ -60,6 +63,20 @@ body {
     top: -280px;
 }
 
+@media screen and (max-width: 768px) {
+    .welcome_nails_img {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+
+    .welcome_txt {
+        width: 100%;
+        left: 0;
+        top: -140px;
+    }
+}
+
                         /*-----About Section-----*/
 #about {
     background-color: #BE9A88;
@@ -76,6 +93,7 @@ body {
 .about_txt {
     margin: 0 20%;
     text-align: justify;
+    line-height: 2;
 }
 
                         /*----------PRESTATIONS----------*/
@@ -126,16 +144,45 @@ h5 {
 }
 
 .pose_card {
-    background-color: #F0E4D1;
+    background-color: #3E0A1C;
     width: 27rem;
     height: 44rem;
     margin: 2.5% 2.5%;
+    perspective: 1000px;
+}
+
+.pose-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.pose_card:hover .pose-card-inner {
+    transform: rotateY(180deg);
+}
+
+.pose-card-front, .pose-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
 
 .pose_card p {
     font-family: 'Quicksand', sans-serif;
     margin: 0 5%;
     text-align: justify;
+}
+
+.pose-card-front {
+    background-color: #F0E4D1;
+}
+
+.pose-card-back {
+    background-color: #F0E4D1;
+    transform: rotateY(180deg);
 }
 
 .line {
@@ -226,4 +273,17 @@ h5 {
 .phone, .mail, .socials {
     margin: 0 10%;
     justify-content: center;
+}
+
+@keyframes navBarFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+{
+
 }
