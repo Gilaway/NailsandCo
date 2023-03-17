@@ -1,0 +1,28 @@
+<%- include("partials/header") -%>
+<%- include("partials/navbar") -%>
+
+<section id="contact" class="contact-page">
+    <h1>Contacte Moi</h1>
+    <div class="contact-div">
+        <form action="home.ejs"> <!-- Faire une page pour une fois que le message a été envoyé -->
+            <div class="contact-form">
+                <div class="fname">
+                    <label for="fname">Prénom</label><br/>
+                    <input type="text" id="fname" name="fname" placeholder="Prénom ou Surnom">
+                </div>
+                <div class="number">
+                    <label for="number">Téléphone</label><br/>
+                    <input type="number" id="number" name="number" placeholder="Téléphone">
+                </div>
+                <div class="message">
+                    <label for="message">Message</label><br/>
+                    <textarea class="txt-input" type="text" id="message" name="message"
+                              placeholder="Si c'est pour un rendez vous, merci de préciser la préstation et l'heure souhaitée. Sinon, laissez moi votre message ou votre question !"></textarea>
+                </div>
+                <button class="send-button" type="submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<%- include("partials/footer") -%>
