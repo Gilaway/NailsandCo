@@ -41,45 +41,42 @@ body {
     margin-bottom: 0;
 }
 
-.welcome_nails_img {
-    height: 45.6vh;
-    width: 56.25vw;
-    background-image: url("/images/téléchargement_2.png");
-    background-size: cover;
-    background-position-y: -60px;
-    position: relative;
-    left: 50px;
+.wrapper-welcome {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    margin: 0 5%;
 }
 
+.welcome_nails_img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url("/images/téléchargement_2.png");
+    background-size: cover;
+}
 .welcome_txt {
-    background-color: white;
-    height: 45.6vh;
-    width: 56.25vw;
-    /*width: 810px;
-    height: 350px;*/
+    grid-column-start: 2;
+    grid-column-end: 4 ;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: #F0E4D1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 36px;
-    position: relative;
-    left: 590px;
-    top: -280px;
-
 }
-/*
-@media screen and (max-width: 768px) {
-    .welcome_nails_img {
-        width: 100%;
-        height: auto;
-        left: 0;
-    }
 
-    .welcome_txt {
-        width: 100%;
-        left: 0;
-        top: -140px;
-    }
-}*/
+.welcome_txt h2 {
+    padding: 0 50px;
+    margin: 0;
+}
+
+.welcome_txt p {
+    padding: 0 50px;
+    font-size: 20px;
+}
 
                         /*-----About Section-----*/
 #about {
@@ -102,6 +99,33 @@ body {
 
                         /*----------PRESTATIONS----------*/
 
+.wrapper-prestations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    margin: 0 5%;
+}
+
+.prestation_img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url("/images/téléchargement_3.png");
+    background-size: cover;
+}
+.prestation_txt {
+    grid-column-start: 2;
+    grid-column-end: 4 ;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: #F0E4D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 36px;
+}
+
 #prestation_welcome {
     background-color: #E8C9AC;
     padding-top: 250px;
@@ -110,43 +134,16 @@ body {
     margin-bottom: 0;
 }
 
-.prestation_img {
-    height: 45.6vh;
-    width: 56.25vw;
-    background-image: url("/images/téléchargement_3.png");
-    background-size: cover;
-    /*background-position-y: -60px;
-    position: relative;
-    left: 50px;*/
-    position: relative;
-    left: 5%;
-}
-
-.prestation_txt {
-    background-color: #F0E4D1;
-    height: 45.6vh;
-    width: 56.25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 36px;
-    position: relative;
-    /*left: 590px;
-    top: -280px;*/
-    right: -38%;
-    top: -50%;
-}
-
 .prestation_txt h2 {
     font-family: 'Caudex', serif;
-    padding: 20px;
+    padding: 0 50px;
     margin: 0;
 }
 
 .prestation_txt p {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    padding: 0 20px;
+    padding: 0 50px;
 }
 
 .prestations {
