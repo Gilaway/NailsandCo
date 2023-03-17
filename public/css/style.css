@@ -8,6 +8,9 @@ body {
 }
 
                         /*----------NAVBAR----------*/
+#navbar {
+    transition: top 0.5s;
+}
 
 .navbar {
     background-color: #3E0A1C;
