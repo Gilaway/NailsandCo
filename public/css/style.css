@@ -17,6 +17,8 @@ body {
     color: white;
     box-shadow: rgba(44, 44, 51, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
     font-family: 'Caudex', serif;
+    font-style: unset;
+    font-weight: lighter;
     font-size: 2.8vw;
     position: fixed;
     display: flex;
@@ -93,11 +95,17 @@ a {
 .welcome_txt h2 {
     padding: 0 50px;
     margin: 0;
+    font-family: "Bodoni 72", serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 4rem;
 }
 
 .welcome_txt p {
     padding: 0 50px;
     font-size: 20px;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: lighter;
 }
 
                         /*-----About Section-----*/
@@ -105,18 +113,23 @@ a {
     background-color: #BE9A88;
     margin-top: 0;
     padding: 60px 0;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .about_title {
     margin: 0 20%;
-    font-size: 28px;
+    font-size: 1.8rem;
+    font-family: "Bodoni 72", serif;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .about_txt {
     margin: 0 20%;
     text-align: justify;
     line-height: 2;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: lighter;
+    font-style: oblique;
 }
 
                         /*----------PRESTATIONS----------*/
@@ -185,7 +198,7 @@ h5 {
     margin-left: 5%;
 }
 
-.pose_card {
+.pose-card {
     background-color: #3E0A1C;
     width: 27rem;
     height: 44rem;
@@ -201,7 +214,7 @@ h5 {
     transform-style: preserve-3d;
 }
 
-.pose_card:hover .pose-card-inner {
+.pose-card:hover .pose-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -209,13 +222,8 @@ h5 {
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}
-
-.pose_card p {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0 5%;
-    text-align: justify;
 }
 
 .pose-card-front {
@@ -230,13 +238,19 @@ h5 {
     justify-content: center;
 }
 
-.tarifs {
-    font-size: 50px;
-    padding-top: 10px;
+.pose-card p {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 5%;
+    text-align: justify;
 }
 
 .pose-card-back p {
     text-align: center;
+}
+
+.tarifs {
+    font-size: 50px;
+    padding-top: 10px;
 }
 
 .prix {
@@ -408,6 +422,9 @@ input {
 .contact_title {
     display: flex;
     justify-content: center;
+    font-family: "Bodoni 72", serif;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 .number-footer, .email {
@@ -419,3 +436,21 @@ input {
     justify-content: center;
 }
 
+.number-footer {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen
+and (max-width: 428px) {
+    .about_txt {
+        margin: 0 10%;
+        font-size: 1.1rem;
+        font-weight: normal ;
+        color: white;
+    }
+
+    .about_title h5 {
+        font-size: 1.8rem;
+    }
+}
